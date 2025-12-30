@@ -7,7 +7,7 @@ let printResults = () => {
 }
 
 let debounce = (fn, d) => {
-    let t = null;
+    let t;
     return function () {
         clearTimeout(t);
         t = setTimeout(()=>{
