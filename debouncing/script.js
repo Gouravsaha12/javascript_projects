@@ -1,0 +1,18 @@
+let searchInput = document.getElementById('search');;
+let resultsDiv = document.getElementById('results');
+
+let printResults = () => {
+    console.log(searchInput.value);
+}
+
+let debounce = (fn, d) => {
+    let t = null;
+    return function () {
+        clearTimeout(t);
+        t = setTimeout(()=>{
+            fn();
+        },d)
+    }
+}
+
+searchInput.addEventListener('keyup', debounce(printResults, 1000));
