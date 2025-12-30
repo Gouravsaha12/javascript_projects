@@ -3,6 +3,7 @@ let resultsDiv = document.getElementById('results');
 
 let printResults = () => {
     console.log(searchInput.value);
+    resultsDiv.innerText = searchInput.value;
 }
 
 let debounce = (fn, d) => {
@@ -15,4 +16,4 @@ let debounce = (fn, d) => {
     }
 }
 
-searchInput.addEventListener('keyup', debounce(printResults, 1000));
+searchInput.addEventListener('keyup', debounce(printResults, 600));
