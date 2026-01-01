@@ -11,3 +11,5 @@ This repository contains various JavaScript projects demonstrating different con
 - **Adder using infinite function currying** : An implementation of an adder function using infinite currying, allowing users to add numbers in a chained manner.
 
 - **Polyfill for bind** : A custom implementation of the `bind` method, which allows users to create a new function with a specified `this` context and optional arguments.
+
+- **internet speed meter** : A simple internet speed meter that measures and displays the download and upload speeds of the user's internet connection. Using fech API to download and upload a test file and calculate the speeds based on the time taken.
